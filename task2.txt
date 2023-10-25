@@ -1,0 +1,34 @@
+Difference between Window and Document Object
+              Window Object Model:
+                          => Syntax of Window Object:
+                                        window.propertyname;
+                          => It represent the browser window in which we are seeing the content.
+                          => The properties related to it are stored in the window object.
+                          => It is loaded before the document because window container document.
+                          => The window is the global element for all objects,functions, etc.
+                          => It is an object of the browser.
+                          => We can access document object properties inside properties inside the window.
+                          => example:
+                                  window.document.title
+                                           it will return the title of the document 
+                          => logically:
+                                window:{
+                                    document:{properties}
+                                }
+                          
+                Document Object Model:
+                            => Syntax of Document Object:
+                                          document.propertyname (or) window.document.propertyname          
+                            => It represents the document loaded inside the window or browser.
+                            => The properties related to it are stored in the document object.
+                            => It is loaded after the loading window because the window contains a document.
+                            => It is the root element of the document object model.
+                            => It is an object of window.
+                            => We can not access windows objects properties inside the document.
+                            => example:
+                                   document.title
+                                            it  will return the title of the document.
+                            => logically:
+                                  document:{
+                                    properties
+                                  }                  
